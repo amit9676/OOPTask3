@@ -119,16 +119,11 @@ node, and the value is the weight.
 - the third dictionary is neighborsIn, which works similiary to neighborsOut - however in neighborsIn, the key of every internal dictionary<br>
 is the source node id, which get to the extrernal dictionary key - the node's id.
         
-# GUI
-TBA
 
 # Folders:
-api:
-        - GeoLocation
-        - NodeData
-        - EdgeData
-        - DirectedWeightedGraph
-        - DirectedWeightedGraphAlgorithms
+data:
+        - the folder contain json file of graphs
+
 # GUI:
         - frameGUI
         - GUImenu
