@@ -121,71 +121,34 @@ is the source node id, which get to the extrernal dictionary key - the node's id
         
 
 # Folders:
-data:
+# data:
         - the folder contain json file of graphs
 
-# GUI:
-        - frameGUI
-        - GUImenu
-        - panelGUI
-        
-# Main Classes:
+# src:
         - DiGraph
-        - NodeData
-        - GraphAlgo
         - DistanceReturnedData
+        - GraphAlgo
+        - GraphAlgoInterface
+        - GraphInterface
+        - main
         - minHeap_Aid
+        - NodeData
+        - Show_graph
         
 # Test:
-        - geolocationTest
-        - VertexTest
-        - EdgedataTest
-        - directeweightedgraphTest
-        - DWGATest
+        - test_DiGraph
+        - test_GraphAlgo
+        - test_NodeData
+
 # UML
 ![UML_Ex3](https://user-images.githubusercontent.com/76455181/147503385-c75acf1b-c6f7-4f53-bb63-4ba590938d8d.jpeg)
 
-# Results Run Time using unittest
-        - Note: the run time of the algorithms may change between computers and even between to runs of the same json file</b></br>
-        Build and load the graph:
-        G1.json (17 Nodes): java: 62 ms, python: </br>
-        G2.json (31 Nodes): 72 ms</br>
-        G3.json (48 Nodes): 83 ms</br>
-        1,000 Nodes: 320 ms</br>
-        10,000 Nodes: 1 sec 124 ms</br>
-        100,000 Nodes: 12 sec 31 sec</br>
-        
-        isConnected:
-        G1.json (17 Nodes):62 ms</br>
-        G2.json (31 Nodes):85 ms</br>
-        G3.json (48 Nodes):86 ms</br>
-        1,000 Nodes:552 ms</br>
-        10,000 Nodes:2 sec 373 ms</br>
-        100,000 Nodes:3 min 1 sec</br>
-
-        center:
-        G1.json (17 Nodes):69 ms</br>
-        G2.json (31 Nodes):83 ms</br>
-        G3.json (48 Nodes):98 ms</br>
-        1,000 Nodes:3 sec 380 ms</br>
-        10,000 Nodes:6 min 48 sec</br>
-        100,000 Nodes:</br>
-
-        tsp:
-        G1.json (17 Nodes):110ms</br>
-        G2.json (31 Nodes):327ms</br>
-        G3.json (48 Nodes):498ms</br>
-        1,000 Nodes (30 cities): 4 sec, 794ms</br>
-        10,000 Nodes (30 cities): 1 min, 22 sec</br>
-        10,000 Nodes (50 cities): 5 min, 33 sec</br>
-        100,000 Nodes (10 cities) 5 min 4 sec:</br>
-# Instructions for using the GUI
-        - File Menu By clicking <b>Load</b> you can load a graph from a json file existing in your computer.
-        - By clicking <b>Save</b> the graph will be saved and replace the existing file with his name.
-        - By clicking "Save as" the graph will be saved in the directory as your choose with the name that you gave.
+# Results Test Java VS Python
+        - Note: the run time of the algorithms may change between computers and even between two runs
+        - the result can be found in the wiki.   
 
 # Instructions for running the program
-        - Download the following zip file- https://github.com/yehonatan169/Ex2_SS/releases/download/v.1/Ex2_jar.zip
+        - Download the following zip file- 
         - Extract the files to your computer.
         - Open CMD.
         - Cd the directory that you saved the files in.
