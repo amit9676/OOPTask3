@@ -1,10 +1,4 @@
-import json
 import random
-
-import pygame
-import tkinter
-from tkinter import *
-from pygame import Rect, time, display, Color, QUIT, KEYDOWN, KEYUP, K_SPACE
 import matplotlib.pyplot as plt
 from src import NodeData
 from src.DiGraph import DiGraph

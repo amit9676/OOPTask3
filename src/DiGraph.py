@@ -1,5 +1,3 @@
-import random
-
 from src.GraphInterface import GraphInterface
 from src.NodeData import NodeData
 

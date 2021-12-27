@@ -30,7 +30,7 @@ class GraphAlgo(GraphAlgoInterface):
         """
         self.__graph = graph
 
-    def get_graph(self) -> GraphInterface:
+    def get_graph(self) -> DiGraph:
         return self.__graph
 
     def load_from_json(self, file_name: str) -> bool:
@@ -146,9 +146,9 @@ class GraphAlgo(GraphAlgoInterface):
 
     def shortest_path(self, id1: int, id2: int) -> (float, list):
         data = self.__distance_init(id1, id2, -1)
-        if data.getDistance() == -1:
+        if data.get_distance() == -1:
             return math.inf, []
-        return data.getDistance(), data.getPath()
+        return data.get_distance(), data.get_path()
 
     def __distance_init(self, src: int, dest: int, key: float):
         all_dists = {}
@@ -213,9 +213,9 @@ class GraphAlgo(GraphAlgoInterface):
 
         t = src
         data = DistanceReturnedData(dist3)
-        data.addNodeToList(0, t)
+        data.add_node_to_list(0, t)
         while t != initial:
-            data.addNodeToList(0, indexes_array[t])
+            data.add_node_to_list(0, indexes_array[t])
             t = indexes_array[t]
 
         return data
@@ -328,7 +328,7 @@ class GraphAlgo(GraphAlgoInterface):
         n = self.__graph.get_all_v()
         for item in n:
             current_data = self.__distance_init(item, -1, k)
-            current_max_distance = current_data.getDistance()
+            current_max_distance = current_data.get_distance()
             if item == 0:
                 k = current_max_distance
             elif item > 0 and current_max_distance < k:
