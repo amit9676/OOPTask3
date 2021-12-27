@@ -150,6 +150,7 @@ is the source node id, which get to the extrernal dictionary key - the node's id
 # Instructions for running the program
         - Download the following zip file- 
         - Extract the files to your computer.
-        - Open CMD.
-        - Cd the directory that you saved the files in.
-        - Write the next command: java -jar "enter the full path of the Ex2.jar" "enter the full path of the json file"
+        - Open main.py.
+        - mark the function check0 and check1 with # so the will not be run.
+        - at the function check2 at the line of loading the json file change the name file to yours name file (make sure that the file is in the data folder) 
+        - run the main.
