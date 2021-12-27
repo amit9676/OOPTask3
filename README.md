@@ -148,7 +148,7 @@ api:
         - directeweightedgraphTest
         - DWGATest
 # UML
-TBA
+![UML_Ex3](https://user-images.githubusercontent.com/76455181/147503385-c75acf1b-c6f7-4f53-bb63-4ba590938d8d.jpeg)
 
 # Results Run Time using unittest
         - Note: the run time of the algorithms may change between computers and even between to runs of the same json file</b></br>
