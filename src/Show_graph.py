@@ -43,7 +43,7 @@ class Show_graph:
                 pos_dest = self.pr_graph.vertices[dest].get_location()
                 his_x = pos_dest[0]
                 his_y = pos_dest[1]
-                plt.annotate("", xy=(x, y), xytext=(his_x, his_y), arrowprops=dict(arrowstyle="->"))
+                plt.annotate("", xy=(x, y), xytext=(his_x, his_y), arrowprops=dict(arrowstyle="<-"))
         plt.show()
 
 
