@@ -97,19 +97,18 @@ class GraphAlgo(GraphAlgoInterface):
     def is_connected(self) -> bool:
         if self.__graph.v_size() == 0:
             return False
-        original = self.__graph.get_all_v()
-        if self.__BFS(original, self.__graph):
+        if self.__BFS(self.__graph):
             g2 = DiGraph()
             for item in self.__graph.get_all_v():
                 g2.add_node(item)
             for item in self.__graph.get_all_v():
                 for item2 in self.__graph.all_in_edges_of_node(item):
                     g2.add_edge(item, item2, 1)
-            if self.__BFS(original, g2):
+            if self.__BFS(g2):
                 return True
         return False
 
-    def __BFS(self, o, g: DiGraph) -> bool:
+    def __BFS(self, g: DiGraph) -> bool:
         qn = []
         if g.v_size() == 0:
             return False
